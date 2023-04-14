@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    body{
+    /* background-color: rgb(19, 152, 94); */
+    background: url(spritimg.jpg);
+    /* background-repeat: no-repeat; */
+    /* background-size: 100%; */
+}
+
+.road{
+    border-bottom: 5px dashed rgb(25, 219, 225);
+}
+
+.panda{
+    background: url(sprit3.png);
+    width: 74px;
+    height: 102px;
+
+    animation: walk 1s steps(12) infinite,
+               forward 11s linear infinite;
+    
+}
+
+
+
+@keyframes walk
+{
+    0%
+    {
+       background-position: 0px;
+    }
+    100%
+    {
+        background-position: 880px;
+    }
+
+}
+
+@keyframes forward
+{
+    0%
+    {
+        transform: translateX(-100px);
+    }
+    100%
+    {
+         transform: translateX(1600px);
+    }
+}
+
+
+
+
+
+.road2{
+    border-bottom: 5px dashed rgba(61, 32, 32, 0.831);
+}
+
+.sprit2{
+    background: url(sprit2.png);
+    width: 175px;
+    height: 315px;
+
+    animation: walk1 1s steps(8) infinite,
+               forward2 11s linear infinite;
+    
+}
+
+
+
+@keyframes walk1
+{
+    0%
+    {
+       background-position: 0px;
+    }
+    100%
+    {
+        background-position: 1400px;
+    }
+
+}
+
+@keyframes forward2
+{
+    0%
+    {
+        transform: translateX(-100px);
+    }
+    100%
+    {
+         transform: translateX(1600px);
+    }
+}
+
+
+
+
+
+
+.road3{
+    border-bottom: 5px dashed rgba(1, 1, 0, 0.1);
+}
+
+.sprit3{
+    background: url(sprit1.png);
+    width: 75px;
+    height: 220px;
+
+    animation: walk12 1s steps(8) infinite,
+               forward21 11s linear infinite;
+    
+}
+
+
+
+@keyframes walk12
+{
+    0%
+    {
+       background-position: 0px;
+    }
+    100%
+    {
+        background-position: 600px;
+    }
+
+}
+
+@keyframes forward21
+{
+    0%
+    {
+        transform: translateX(-100px);
+    }
+    100%
+    {
+         transform: translateX(1600px);
+    }
+}
+
+
+
+
+
+
+
+
+
